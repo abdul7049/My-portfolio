@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Portfolio</a>
+        <div id="menu-bar" class="fa fa-bars"></div>
+        <nav class="navbar">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            
+        </nav>
+       
+    </header>
+    <!--About-->
+    <section class="about" id="about">
+       <div class="box-container">
+        <div class="box">
+            <h3>Welcome to my portfolio website!</h3>
+            <h1>Hey folks, I'm <span style="color: var(--yello);">Abdullah Rehman</span></h1>
+            <p>I'm a <span style="color: var(--yello); font-weight: bold;">Graphic Designer</span>
+                 & <span style="color: var(--yello); font-weight: bold;">Web Developer</span></p>
+                 <a href="#" class="btn">Download Resume</a>
+        </div>
+        <div class="box">
+            <img src="image/UI Developer.gif" alt="">
+           </div>
+       </div> 
+        
+    </section>
+    <section class="projects" id="projects">
+        <h1 class="heading">Projects i made for Educational and Practice Purpose</h1>
+        <div class="box-container">
+            <div class="box">
+                <iframe src="https://abdul7049.github.io/App-Landing-Page-Website/"></iframe>
+                <p>Responsive App Landing Page Design using HTML,CSS & JavaScript</p>
+            </div>
+            <div class="box">
+                <iframe src="https://abdul7049.github.io/App-Landing-Page-Website/"></iframe>
+                <p>Responsive App Landing Page Design using HTML,CSS & JavaScript</p>
+                
+            </div>
+        </div>
+        <div class="box-container">
+            <div class="box">
+                <iframe src="https://abdul7049.github.io/App-Landing-Page-Website/"></iframe>
+                <p>Responsive App Landing Page Design using HTML,CSS & JavaScript</p>
+            </div>
+            <div class="box">
+                <iframe src="https://abdul7049.github.io/App-Landing-Page-Website/"></iframe>
+                <p>Responsive App Landing Page Design using HTML,CSS & JavaScript</p>
+                
+            </div>
+        </div>
+    </section>
+
+<section class="contact" id="contact">
+    <h1 class="heading">Interested to work together? <br>Let's talk</h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="image/my.jpeg" alt="">
+            <h3>Contact Me</h3>
+           <div class="tag">
+            <a href="https://github.com/abdul7049"><i class="fab fa-github"></i>Github</a>
+           <a href="instagram.com/ar_abdulah_"><i class="fab fa-instagram"></i>Instagram</a>
+           <a href="https://wa.me/+923328591779"><i class="fab fa-whatsapp"></i>Github</a>
+           <a href="http://www.linkedin.com/in/abdullah-rehman-584311247"><i class="fab fa-linkedin"></i>Linkedin</a>
+           </div>
+        </div>
+    </div>
+</section>
+
+    <script>
+         let menu=document.querySelector('#menu-bar');
+    let navbar=document.querySelector('.navbar');
+    menu.addEventListener('click',()=>{
+menu.classList.toggle('fa-times');
+navbar.classList.toggle('nav-toggle');
+
+    });
+    window.onscroll=()=>{
+        menu.classList.remove('fa-times');
+navbar.classList.remove('nav-toggle'); 
+    }
+    </script>
+</body>
+</html>
